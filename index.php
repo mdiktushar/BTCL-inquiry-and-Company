@@ -6,7 +6,7 @@
     <title>BTCL Help line</title>
 
     <?php include("include/links.php") ?>
-
+    
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     
     ?>
         <ul class = "nav navbar-nav navbar-right">
-             <button type="button" class="btn btn-light">Login</button>
+             <button id="loginLode" type="button" class="btn btn-light">Login</button>
         </ul>
 
     </nav>
@@ -27,11 +27,8 @@
 
     <!-- starging templats -->
     <div>
-        <img src="image/startPage/001.png" alt="" class="img-fluid">
+        <img name="slide" alt="" class="img-fluid">
     </div>
-
-
-
 
     <div class="container">
         <div class="jumbotron">
@@ -81,6 +78,9 @@
         </div>
     </div>
     <!-- end -->
+
+    <!-- JS script -->
+    <script src="jScript\script1.js"></script>
 
 </body>
 </html>

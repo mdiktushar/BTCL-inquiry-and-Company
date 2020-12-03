@@ -1,3 +1,4 @@
+
 <nav class = "navbar navbar-default navbar-dark bg-dark fixed-top"  >
         <div class = "navbar-header">
             <a class="navbar-brand" href="index.php">
@@ -5,5 +6,5 @@
             </a>
         </div>
         <div>
-            <a class="navbar-brand"><?php echo $navTitle; ?></a>
+            <a class="navbar-brand textStyle" ><?php echo $navTitle; ?></a>
         </div>

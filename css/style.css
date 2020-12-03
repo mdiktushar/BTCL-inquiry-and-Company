@@ -1,17 +1,11 @@
 body{
-    background-color: #fffffa;
+    background-color: #f8f9fa;
 }
 
-.navLogin{
-    color: rgb(255, 255, 255);
-}
-nav a{
+.textStyle{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-nav{
-    background-color: black;
-}
 
 .imgpad{
     margin: 10px;
