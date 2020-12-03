@@ -9,6 +9,10 @@ nav a{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+nav{
+    background-color: black;
+}
+
 .imgpad{
     margin: 10px;
 }
