@@ -6,7 +6,7 @@
 
     if (isset($_POST['pass']) && isset($_POST['ID'])) {
 
-        $stmt = $pdo->prepare('SELECT ID FROM customer WHERE ID = :ID AND pass = :pw');
+        $stmt = $pdo->prepare('SELECT ID, Name, Email, Address, Area_Code, Date_of_Birth, Connection_Type, City_and_Zip_Code, Connection_Error, Mobile_Number FROM customer WHERE ID = :ID AND pass = :pw');
         
         $stmt->execute(array(':ID' => $_POST['ID'], ':pw' => $_POST['pass']));
 
@@ -14,12 +14,21 @@
 
         if($row !== false){
             $_SESSION['ID_number'] = $row['ID'];
+            $_SESSION['Name'] = $row['Name'];
+            $_SESSION['Email'] = $row['Email'];
+            $_SESSION['Address'] = $row['Address'];
+            $_SESSION['Area_Code'] = $row['Area_Code'];
+            $_SESSION['Date_of_Birth'] = $row['Date_of_Birth'];
+            $_SESSION['Connection_Type'] = $row['Connection_Type'];
+            $_SESSION['City_and_Zip_Code'] = $row['City_and_Zip_Code'];
+            $_SESSION['Connection_Error'] = $row['Connection_Error'];
+            $_SESSION['Mobile_Number'] = $row['Mobile_Number'];
 
 
             header("Location: home.php");
             return;
         }
-    
+        header("Location: login.php");
     }
 
 

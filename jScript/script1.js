@@ -18,3 +18,4 @@ window.onload = changeImage;
 $("#loginLode").click(function(){
     window.location.href = "login.php";
 });
+
