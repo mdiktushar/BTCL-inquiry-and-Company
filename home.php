@@ -19,7 +19,7 @@
     
     <!-- starting navbar -->
     <?php
-        $navTitle = "Home";
+        $navTitle = $_SESSION['Name'];
         include("include/nav.php");
 
     ?>
@@ -33,20 +33,61 @@
 
     <div class="container">
 
-        <div class = "jumbotron">
+        <div class = "jumbotron" >
             <br><br>
-            <h6>Name: <?php echo( $_SESSION['Name']); ?></h6>
-            <h6>Number: <?php echo($_SESSION['ID_number']); ?> </h6>
-            <h6>Email: <?php echo($_SESSION['Email']); ?> </h6>
-            <h6>Address: <?php echo($_SESSION['Address']); ?> </h6>
-            <h6>Date of Birth: <?php echo($_SESSION['Date_of_Birth']); ?> </h6>
-            <h6>Connection Type: <?php echo($_SESSION['Connection_Type']); ?> </h6>
-            <h6>City and Zip Code: <?php echo($_SESSION['City_and_Zip_Code']); ?> </h6>
-            <h6>Mobile Number: <?php echo($_SESSION['Mobile_Number']); ?> </h6>
 
+            <table class="textStyle" style = "font-weight: bold;">
+            <tr>
+                <td>Name:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['Name']); ?></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['Email']); ?></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['Address']); ?></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['Date_of_Birth']); ?></td>
+            </tr>
+            <tr>
+                <td>Connection Type:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['Connection_Type']); ?></td>
+            </tr>
+            <tr>
+                <td>City and Zip Code:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['City_and_Zip_Code']); ?></td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($_SESSION['Mobile_Number']); ?> </td>
+            </tr>
+            </table>
 
+            <div>
+                <br><br>
+            <?php
+                if($_SESSION['Connection_Error'] === "0"){
+
+                    echo"<button id = \"report\" type=\"button\" class=\"btn btn-danger\">Complain</button>";
+                }else{
+                    echo "<h6 style = \"color: red;\">Report Send</h6>";
+                   
+                }
+            ?>
+            </div>
         </div>
-    
+
     </div>
     
     <!-- JS script -->
