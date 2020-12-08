@@ -24,7 +24,8 @@
 
     ?>
         <ul class = "nav navbar-nav navbar-right">
-            <a href="logout.php"><button id="login" type="button" class="btn btn-light ">Logout</button></a> 
+            <!-- <a href="logout.php"><button id="logoutID" type="button" class="btn btn-light ">Logout</button></a>  -->
+            <button id="logoutID" type="button" class="btn btn-light ">Logout</button>
         </ul>
     </nav>
     <!-- end -->
@@ -49,7 +50,7 @@
     </div>
     
     <!-- JS script -->
-    <script src="jScript\script1.js"></script>
+    <script src="jScript\script2.js"></script>
 
 </body>
 </html>
