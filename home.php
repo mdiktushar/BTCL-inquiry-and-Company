@@ -3,6 +3,8 @@
     session_start();
     require_once "pdo.php";
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +15,8 @@
     <title>Document</title>
 
     <?php include("include/links.php") ?>
+
+
 
 </head>
 <body>
@@ -36,56 +40,74 @@
         <div class = "jumbotron" >
             <br><br>
 
+            <?php
+
+                $sql1 = "SELECT Name, Email, ID, Address, Area_Code, Date_of_Birth, Connection_Type, City_and_Zip_Code, Connection_Error, Mobile_Number FROM customer WHERE ID = ";
+                $sql2 = ";";
+                $sql = $sql1.$_SESSION['ID_number'].$sql2;
+
+                $stmt = $pdo->query($sql1.$_SESSION['ID_number'].$sql2);
+                echo '<table border="1">';
+                $name;
+                while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+                    $name = $row['Name'];
+                    $email = $row['Email'];
+                    $number = $row['ID'];
+                    $address = $row['Address'];
+                    $areaCode = $row['Area_Code'];
+                    $dateOfBirth = $row['Date_of_Birth'];
+                    $connectionType = $row['Connection_Type'];
+                    $cityAndZip = $row['City_and_Zip_Code'];
+                    $connectionError = $row['Connection_Error'];
+                    $mobileNumber = $row['Mobile_Number'];
+
+                }
+
+            ?>
+
             <table class="textStyle" style = "font-weight: bold;">
             <tr>
                 <td>Name:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['Name']); ?></td>
+                <td><?php echo($name); ?></td>
+            </tr>
+            <tr>
+                <td>Number:</td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td><?php echo($number); ?></td>
             </tr>
             <tr>
                 <td>Email:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['Email']); ?></td>
+                <td><?php echo($email); ?></td>
             </tr>
             <tr>
                 <td>Address:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['Address']); ?></td>
+                <td><?php echo($address); ?></td>
             </tr>
             <tr>
                 <td>Date of Birth:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['Date_of_Birth']); ?></td>
+                <td><?php echo($dateOfBirth); ?></td>
             </tr>
             <tr>
                 <td>Connection Type:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['Connection_Type']); ?></td>
+                <td><?php echo($connectionType); ?></td>
             </tr>
             <tr>
                 <td>City and Zip Code:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['City_and_Zip_Code']); ?></td>
+                <td><?php echo($cityAndZip); ?></td>
             </tr>
             <tr>
                 <td>Mobile Number:</td>
                 <td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td><?php echo($_SESSION['Mobile_Number']); ?> </td>
+                <td><?php echo($mobileNumber); ?> </td>
             </tr>
             </table>
 
-            <div>
-                <br><br>
-            <?php
-                if($_SESSION['Connection_Error'] === "0"){
-
-                    echo"<button id = \"report\" type=\"button\" class=\"btn btn-danger\">Complain</button>";
-                }else{
-                    echo "<h6 style = \"color: red;\">Report Send</h6>";
-                   
-                }
-            ?>
-            </div>
         </div>
 
     </div>
