@@ -111,17 +111,13 @@
 
             <!-- Adding Complain to the inquary table -->
             <div>
-
-                <?php include("complain.php"); ?>
-
-                <form method="post">
                 <br><br>
-                    <p>Write anything to confimr you are not a robort and then click the button:
-                        <input type="text" name="confirm" size="60"/></p>
-                    
-                    <input type="submit" value="Add">
-                    
-                </form>
+                <?php
+                    if($connectionError === '1')
+                        echo "Your Complaint has been sended";
+                    else
+                    include("include/complain.php");
+                ?>            
             
             </div>
             <!-- end -->
