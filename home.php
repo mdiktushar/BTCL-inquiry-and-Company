@@ -108,6 +108,25 @@
             </tr>
             </table>
 
+
+            <!-- Adding Complain to the inquary table -->
+            <div>
+
+                <?php include("complain.php"); ?>
+
+                <form method="post">
+                <br><br>
+                    <p>Write anything to confimr you are not a robort and then click the button:
+                        <input type="text" name="confirm" size="60"/></p>
+                    
+                    <input type="submit" value="Add">
+                    
+                </form>
+            
+            </div>
+            <!-- end -->
+
+
         </div>
 
     </div>
