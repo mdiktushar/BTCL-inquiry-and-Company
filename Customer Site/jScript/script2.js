@@ -1,3 +1,3 @@
 $("#logoutID").click(function(){
-    window.location.replace("index.php");
+    window.location.replace("logout.php");
 });

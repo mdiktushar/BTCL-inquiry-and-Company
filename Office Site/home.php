@@ -1,6 +1,15 @@
 <?php
 
     session_start();
+    if($_SESSION['line_manLogin'] != 1)
+    {
+        echo "
+            <script >
+                window.location.replace(\"index.php\");
+            </script>
+        ";
+    }
+
     require_once "pdo.php";
 
 ?>
@@ -34,18 +43,18 @@
 
     <div class="container">
         <div class="jumbotron">
+
+            <!-- Deleting the coplain from inquary table -->
+            <?php include("include/Delete from inquary.php"); ?>
+            <!-- end -->
+
+            <!-- Showing the Table -->
             <h2>Table</h2>
-            <!-- <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                       -->
-            
-            
-
-
-
             <div class="table-responsive">          
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>Serial</th>
                             <th>Uner Number</th>
                             <th>User Name</th>
                             <th>Contace Number</th>
@@ -73,18 +82,21 @@
 
                             }
                                 
-                            ?>
+                        ?>
                                 
                        
                     </tbody>
                 </table>
             </div>
 
+            <!-- end -->
+
         </div>
     
     </div>
     
-
+        <!-- JS script -->
+        <script src="jScript\script1.js"></script>
    
     
 </body>

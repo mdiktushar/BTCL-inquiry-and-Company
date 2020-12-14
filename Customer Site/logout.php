@@ -23,3 +23,8 @@ unset( $_SESSION['Name']);
  header('Location: index.php');
 
 ?>
+
+<script>
+
+    window.location.replace("index.php");
+</script>
