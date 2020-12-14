@@ -1,6 +1,14 @@
 <?php
 
     session_start();
+    if( $_SESSION['User_login'] != 1)
+    {
+        echo "
+            <script >
+                window.location.replace(\"login.php\");
+            </script>
+        ";
+    }
     require_once "pdo.php";
 
 
@@ -12,7 +20,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?php echo ( $_SESSION['Name']); ?></title>
 
     <?php include("include/links.php") ?>
 
@@ -29,7 +37,7 @@
     ?>
         <ul class = "nav navbar-nav navbar-right">
             <!-- <a href="logout.php"><button id="logoutID" type="button" class="btn btn-light ">Logout</button></a>  -->
-            <button id="logoutID" type="button" class="btn btn-light ">Logout</button>
+            <a href="logout.php"><button type="button" class="btn btn-light ">Logout</button></a>
         </ul>
     </nav>
     <!-- end -->
@@ -126,9 +134,11 @@
         </div>
 
     </div>
-    
+
     <!-- JS script -->
     <script src="jScript\script2.js"></script>
+    
+
 
 </body>
 </html>

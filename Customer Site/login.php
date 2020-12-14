@@ -2,6 +2,16 @@
 <?php
 
     session_start();
+    if( $_SESSION['User_login'] == 1)
+    {
+        echo "
+            <script >
+                window.location.replace(\"home.php\");
+            </script>
+        ";
+    }
+
+
     require_once "pdo.php";
 
     if (isset($_POST['pass']) && isset($_POST['ID'])) {
@@ -15,6 +25,7 @@
         if($row !== false){
             $_SESSION['ID_number'] = $row['ID'];
             $_SESSION['Name'] = $row['Name'];
+            $_SESSION['User_login'] = 1;
             // $_SESSION['Email'] = $row['Email'];
             // $_SESSION['Address'] = $row['Address'];
             // $_SESSION['Area_Code'] = $row['Area_Code'];

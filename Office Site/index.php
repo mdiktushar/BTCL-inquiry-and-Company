@@ -16,14 +16,6 @@ if (isset($_POST['pass']) && isset($_POST['ID'])) {
         $_SESSION['Aris_ID'] = $row['Aria'];
         $_SESSION['lineman_name'] = $row['Name'];
         $_SESSION['line_manLogin'] = 1;
-        // $_SESSION['Email'] = $row['Email'];
-        // $_SESSION['Address'] = $row['Address'];
-        // $_SESSION['Area_Code'] = $row['Area_Code'];
-        // $_SESSION['Date_of_Birth'] = $row['Date_of_Birth'];
-        // $_SESSION['Connection_Type'] = $row['Connection_Type'];
-        // $_SESSION['City_and_Zip_Code'] = $row['City_and_Zip_Code'];
-        // $_SESSION['Connection_Error'] = $row['Connection_Error'];
-        // $_SESSION['Mobile_Number'] = $row['Mobile_Number'];
 
         header("Location: home.php");
         return;
