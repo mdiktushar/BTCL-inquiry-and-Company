@@ -1,0 +1,19 @@
+body{
+    background-color: #f8f9fa;
+}
+
+.textStyle{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.imgpad{
+    margin: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
