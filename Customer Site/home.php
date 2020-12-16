@@ -36,12 +36,10 @@
 
     ?>
         <ul class = "nav navbar-nav navbar-right">
-            <!-- <a href="logout.php"><button id="logoutID" type="button" class="btn btn-light ">Logout</button></a>  -->
             <a href="logout.php"><button type="button" class="btn btn-light ">Logout</button></a>
         </ul>
-    </nav>
+    </nav> 
     <!-- end -->
-
 
     <div class="container">
 
@@ -122,13 +120,15 @@
                 <br><br>
                 <?php
                     if($connectionError === '1')
-                        echo "Your Complaint has been sended";
+                        echo "<h6 class = \"textGreen\">Your Complaint has been sended</h6>";
                     else
                     include("include/complain.php");
                 ?>            
             
             </div>
             <!-- end -->
+
+            <strong><a class="goRight textboue1" href="">Change Password</a></strong>
 
 
         </div>

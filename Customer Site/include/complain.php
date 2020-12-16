@@ -31,8 +31,9 @@
 ?>
 
 <form method="post">
-        <p>Write anything to confimr you are not a robort and then click the button: <br>
-        <input type="text" name="confirm" /></p>
+        <h6>Type "YES" if your want to complain a connection Error:</h6> <br>
+
+        <input type="text" name="confirm" /><br><br>
         
         <input type="submit" class="btn btn-primary" value="Complain">
         
