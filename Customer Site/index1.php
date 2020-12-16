@@ -20,7 +20,7 @@
              <button id="loginLode" type="button" class="btn btn-light">Login</button>
         </ul>
 
-    </nav> <br><br><br>
+    </nav> <br>
     <!-- End -->
 
 
@@ -28,13 +28,6 @@
     <!-- starging templats -->
     <div>
         <img name="slide" alt="" class="img-fluid">
-    </div>
-
-    <div class="container">
-        <div class="jumbotron">
-            
-           
-        </div>
     </div>
 
 
@@ -47,32 +40,32 @@
         <div class="row "> 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Telephone.png" alt="">
-                <div class="center">Telephone</div>
+                <div class="center"><a style = "color : black" href="http://www.btcl.gov.bd/services/telephone">Telephone</a></div>
             </div>
 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Internet.png" alt="">
-                <div class="center">Internet</div>
+                <div class="center "><a style = "color : black" href="http://www.btcl.gov.bd/services/lli">Internet</a></div>
             </div>
 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Domain & Hosting.png" alt="">
-                <div class="center">Domain &<br>Hosting</div>
+                <div class="center"><a style = "color : black" href="http://www.btcl.gov.bd/services/domain">Domain &<br>Hosting</a></div>
             </div>
 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Transmission.png" alt="">
-                <div class="center">Transmission</div>
+                <div class="center"><a style = "color : black" href="http://www.btcl.gov.bd/services/transmission">Transmission</a></div>
             </div>
 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Bill and Payment.png" alt="">
-                <div class="center">Bill and<br>Payment</div>
+                <div class="center"><a style = "color : black" href="http://www.btcl.gov.bd/pages/2/telephone-bill"> Bill and<br>Payment</a></div>
             </div>
 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Complain Online.png" alt="">
-                <div class="center">Complain<br>Online</div>
+                <div class="center"><a style = "color : black" href="#">Complain<br>Online</a></div>
             </div>
 
         </div>
