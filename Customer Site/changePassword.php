@@ -79,6 +79,8 @@
             </form>
         </div>
     </div>
+
+    <?php include("include/pageEnding.php") ?>
     
 </body>
 </html>

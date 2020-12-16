@@ -106,7 +106,7 @@
     </div>
 
     
-    
+    <?php include("include/pageEnding.php") ?>
     
 </body>
 </html>

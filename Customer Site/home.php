@@ -136,6 +136,8 @@
 
     </div>
 
+    <?php include("include/pageEnding.php") ?>
+
     <!-- JS script -->
     <script src="jScript\script2.js"></script>
     
