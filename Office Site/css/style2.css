@@ -1,0 +1,33 @@
+
+.textRed{
+    color:red;
+    text-decoration: none;
+}
+
+.ancHov a:hover {
+    color:green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.textGreen{
+    color:green;
+    text-decoration: none;
+}
+
+.goRight{
+    padding-left: 900px;
+
+}
+a:hover {
+    color:green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.textboue1{
+    color:rgb(15, 61, 88);
+    text-decoration: none;
+    
+}
+

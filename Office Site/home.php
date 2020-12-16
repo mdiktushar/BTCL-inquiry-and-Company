@@ -20,7 +20,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo($_SESSION['lineman_name']); ?></title>
+    <title><?php echo($_SESSION['lineman_name']); ?> Line-Man</title>
 
     <?php include("include/links.php") ?>
 </head>
@@ -36,20 +36,23 @@
             <!-- <a href="logout.php"><button id="logoutID" type="button" class="btn btn-light ">Logout</button></a>  -->
             <button id="logoutID" type="button" class="btn btn-light ">Logout</button>
         </ul>
-    </nav>
+    </nav> <br><br><br>
     <!-- end -->
-    <br>
+    <br><br>
 
 
     <div class="container">
-        <div class="jumbotron">
+        <div class="jumbotron textStyle">
 
             <!-- Deleting the coplain from inquary table -->
             <?php include("include/Delete from inquary.php"); ?>
             <!-- end -->
 
+            <strong><a class="goRight textboue1" href="changePassword.php">Change Password</a></strong>
+
             <!-- Showing the Table -->
-            <h2>Table</h2>
+            <br>
+            <h2>Complainse</h2>
             <div class="table-responsive">          
                 <table class="table">
                     <thead>
@@ -95,9 +98,9 @@
     
     </div>
     
-        <!-- JS script -->
-        <script src="jScript\script1.js"></script>
-   
+    <!-- JS script -->
+    <script src="jScript\script1.js"></script>
+
     
 </body>
 </html>

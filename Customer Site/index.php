@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION['User_login'] = 0;
+    $_SESSION['line_manLogin'] = 0;
 
 ?>
 

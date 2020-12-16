@@ -39,7 +39,7 @@
         <ul class = "nav navbar-nav navbar-right">
             <a href="logout.php"><button type="button" class="btn btn-light ">Logout</button></a>
         </ul>
-    </nav> 
+    </nav> <br><br><br>
     <!-- end -->
 
     <div class="container">

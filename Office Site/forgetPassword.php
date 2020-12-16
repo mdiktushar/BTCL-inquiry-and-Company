@@ -1,8 +1,7 @@
 
 <?php
-    $secret_Question = "";
     session_start();
-    if( $_SESSION['User_login'] == 1)
+    if($_SESSION['line_manLogin'] == 1)
     {
         echo "
             <script >

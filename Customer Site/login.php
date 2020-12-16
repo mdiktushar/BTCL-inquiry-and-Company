@@ -68,7 +68,7 @@
         <ul class = "nav navbar-nav navbar-right">
             <a href=""></a>
         </ul>
-    </nav>
+    </nav> <br><br><br>
     <!-- end -->
 
     <!-- login from -->

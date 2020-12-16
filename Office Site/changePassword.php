@@ -1,11 +1,11 @@
 <?php
 
     session_start();
-    if( $_SESSION['User_login'] != 1)
+    if($_SESSION['line_manLogin'] != 1)
     {
         echo "
             <script >
-                window.location.replace(\"login.php\");
+                window.location.replace(\"index.php\");
             </script>
         ";
     }
@@ -17,10 +17,10 @@
 
         $data = [
                 ':value1' => $_POST['pass1'],
-                ':id' => $_SESSION['ID_number'],
+                ':id' => $_SESSION['Aris_ID'],
         ];
 
-        $sql = "UPDATE customer SET pass = :value1 WHERE ID = :id;";
+        $sql = "UPDATE lineman SET password = :value1 WHERE Aria = :id;";
         $pdo->prepare($sql)->execute($data);
         
         header("Location: home.php");
@@ -46,7 +46,7 @@
 
     <!-- starting navbar -->
     <?php
-        $navTitle = $_SESSION['Name'];
+        $navTitle = $_SESSION['lineman_name'];
         include("include/nav.php");
 
     ?>
@@ -62,7 +62,8 @@
         <div class = "jumbotron" >
 
             <form method="post">
-                <h1>Changing Password</h1> <br>
+                <h1>Changing Password</h1>
+                <h4>Aria : <?php echo ($_SESSION['Aris_ID']); ?></h4> <br>
 
                 <div>
                     Please enter the new password <br>
