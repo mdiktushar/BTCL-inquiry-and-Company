@@ -1,0 +1,11 @@
+
+.textRed{
+    color:red;
+    text-decoration: none;
+}
+
+.ancHov a:hover {
+    color:red;
+    font-weight: bold;
+    text-decoration: none;
+  }

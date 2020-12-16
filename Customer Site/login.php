@@ -42,7 +42,7 @@
         header("Location: login.php");
     }
 
-
+    
 ?>
 
 
@@ -54,6 +54,7 @@
     <title>Login</title>
 
     <?php include("include/links.php"); ?>
+    <link rel="stylesheet" href="css/style2.css">
 
 </head>
 <body>
@@ -97,6 +98,11 @@
 
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
+
+        <div class="ancHov">
+            <a class="textRed" href="forgetPassword.php">Forget Password...!</a>
+        
+        </div>
     </div>
 
     
