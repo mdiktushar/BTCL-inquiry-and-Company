@@ -25,5 +25,5 @@
 
 <script>
 
-    window.location.replace("login.php");
+    window.location.replace("index.php");
 </script>

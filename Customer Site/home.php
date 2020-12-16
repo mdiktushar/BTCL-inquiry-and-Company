@@ -1,6 +1,7 @@
 <?php
 
     session_start();
+    
     if( $_SESSION['User_login'] != 1)
     {
         echo "
@@ -128,7 +129,7 @@
             </div>
             <!-- end -->
 
-            <strong><a class="goRight textboue1" href="">Change Password</a></strong>
+            <strong><a class="goRight textboue1" href="changePassword.php">Change Password</a></strong>
 
 
         </div>
