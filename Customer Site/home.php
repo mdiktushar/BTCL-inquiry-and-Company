@@ -128,10 +128,12 @@
             
             </div>
             <!-- end -->
-
-            <strong><a class="goRight textboue1" href="changePassword.php">Change Password</a></strong>
-
-
+            
+            <!-- changing password -->
+            <div class="goRight">
+                <strong><a class="textboue1" href="changePassword.php">Change Password</a></strong>
+            </div>
+            
         </div>
 
     </div>

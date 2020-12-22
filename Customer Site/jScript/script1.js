@@ -1,6 +1,6 @@
 var i = 0;
 var image = ["image/startPage/001.png", "image/startPage/002.png", "image/startPage/003.png", "image/startPage/004.png"];
-var time = 3000;
+var time = 2000;
 
 function changeImage(){
     document.slide.src = image[i];

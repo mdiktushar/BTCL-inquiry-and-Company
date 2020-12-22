@@ -48,7 +48,10 @@
             <?php include("include/Delete from inquary.php"); ?>
             <!-- end -->
 
-            <strong><a class="goRight textboue1" href="changePassword.php">Change Password</a></strong>
+            <div class = "goRight">
+                <strong><a class="textboue1" href="changePassword.php">Change Password</a></strong>
+            </div>
+            
 
             <!-- Showing the Table -->
             <br>

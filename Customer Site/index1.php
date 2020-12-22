@@ -37,7 +37,7 @@
     <div class="container">
         <h2>Our Provided Services:</h2>
 
-        <div class="row "> 
+        <div class="row center"> 
             <div class="col-lg-4 col-6 ">
                 <img class="img-thumbnail img-fluid imgpad" src="image/Services/Telephone.png" alt="">
                 <div class="center"><a style = "color : black" href="http://www.btcl.gov.bd/services/telephone">Telephone</a></div>

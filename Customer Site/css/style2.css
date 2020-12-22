@@ -16,9 +16,14 @@
 }
 
 .goRight{
-    padding-left: 900px;
+    position: absolute;
+    right: 150px;  
+    width: 200px;
+    height: 120px;
+    border: 3px solid green;
 
 }
+
 a:hover {
     color:green;
     font-weight: bold;
