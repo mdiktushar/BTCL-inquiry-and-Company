@@ -4,7 +4,7 @@
     unset($_SESSION['Aris_ID']);
     unset($_SESSION['lineman_name']);
     unset($_SESSION['line_manLogin']);
-    header('Location: index.php');
+    // header('Location: index.php');
 
 ?>
 

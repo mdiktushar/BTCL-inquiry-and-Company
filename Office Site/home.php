@@ -103,7 +103,8 @@
 
     <?php include("include/pageEnding.php") ?>
 
+    <!-- JS script -->
+    <script src="jScript\script1.js"></script>
 
-    
 </body>
 </html>
