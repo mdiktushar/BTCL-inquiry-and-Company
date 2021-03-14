@@ -1,6 +1,16 @@
 <?php
     session_start();
-    $_SESSION['line_manLogin'] = 0;
+    if($_SESSION['line_manLogin'] == 1)
+    {
+        echo "
+            <script >
+                window.location.replace(\"home.php\");
+            </script>
+        ";
+    }else{
+        $_SESSION['line_manLogin'] = 0;
+    }
+    
 
 ?>
 
